@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профіль користувача</title>
+</head>
+<body>
+    <h1>Профіль користувача</h1>
+    <p>Ім'я користувача: {{ profile.user.username }}</p>
+    <p>Опис: {{ profile.bio }}</p>
+    <p>Локація: {{ profile.location }}</p>
+    <p>Дата народження: {{ profile.birth_date }}</p>
+
+    <a href="{% url 'tasks:edit_profile' %}">Редагувати профіль</a>
+</body>
+</html>
